@@ -9,13 +9,13 @@
 </head>
 
 <body>
-<h1>Cadastro Universitário:</h1>
-<div class="alinhamento">
-	<button type="button" class="btn btn-success" onclick="window.location.href='cadastro_estudante/estudante.php'">Cadastrar Estudante</button>
-	<button type="button" class="btn btn-primary">Cadastrar Curso</button>
-	<button type="button" class="btn btn-warning">Matricular Estudante</button>
-	<button type="button" class="btn btn-danger">Situação Matrículas</button>
-</div>
-<div></div>
+	<nav class="navbar navbar-dark bg-dark">
+  		<span class="navbar-brand mb-0 h1">Cadastro Universitário:</span>
+	</nav>
+	<div class="alinhamento">
+		<button type="button" class="btn btn-success" onclick="window.location.href='cadastro_estudante/estudante.php'">Cadastrar Estudante</button>
+		<button type="button" class="btn btn-primary">Cadastrar Curso</button>
+		<button type="button" class="btn btn-warning">Matricular Estudante</button>
+	</div>
 </body>
 </html>
