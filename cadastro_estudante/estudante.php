@@ -46,8 +46,8 @@
 			</div>
 
 			<div class="form-group">
-    			<label>Telefone:</label>
-    			<input type="tel" class="form-control" name="telefone" placeholder="(xx) xxxxxxxxx" required>
+    			<label>Registro Acadêmico:</label>
+    			<input type="text" class="form-control" name="RA" placeholder="R.A" required>
   			</div>
 
   			<div class="form-group">
