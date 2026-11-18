@@ -4,7 +4,10 @@ require_once "../conexao.php"
 
 $nome = $_POST['nome_estudante'];
 $data_nascimento = $_POST['data_nascimento']
-$curso = $_POST['curso'];
+$sexo = $_POST['sexo'];
+$telefone = $_POST['telefone'];
+$email = $_POST['email'];
+
 
 
 $banco = $conexao->selectDatabase("EstudanteDB")
