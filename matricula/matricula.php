@@ -8,11 +8,22 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<?php require_once __DIR__ . '/../conexao.php'; 
+	<?php 
+	require_once __DIR__ . '/../conexao.php'; 
+
 	$banco = $conexao->selectDatabase("EstudanteDB");
 	$colecaoEstudantes = $banco->selectCollection('estudantes');
 	$colecaoCursos = $banco->selectCollection('cursos');
-	?>
+
+	$estudantes = $colecaoEstudantes->find([], [
+    	'sort' => ['nome' => 1]
+	]);
+
+	$cursos = $colecaoCursos->find([], [
+    	'sort' => ['nome' => 1]
+	]);
+
+?>
 	<nav class="navbar navbar-dark bg-dark">
   		<span class="navbar-brand mb-0 h1">Cadastro de Cursos:</span>
   		<ul class="navbar-nav mr-auto">
@@ -25,6 +36,34 @@
 	<form class="alinhamento" method="POST" action="salvar_curso.php">
 		<h2>Matrícula:</h2>
 
+		<label>Selecione o aluno:</label>
+        <select name="aluno" required>
+            <option value="">Escolha um aluno</option>
+
+            <?php foreach ($estudantes as $aluno): ?>
+
+                <option value="<?= $aluno['_id'] ?>">
+                    <?= htmlspecialchars($aluno['nome_estudante']) ?>
+                </option>
+
+            <?php endforeach; ?>
+        </select>
+
+        <br>
+
+        <label>Selecione o curso:</label>
+        <select name="curso" required>
+            <option value="">Escolha um curso</option>
+
+            <?php foreach ($cursos as $curso): ?>
+
+                <option value="<?= $curso['_id'] ?>">
+                    <?= htmlspecialchars($curso['nome_curso']) ?>
+                </option>
+
+            <?php endforeach; ?>
+
+        </select>
 
 
   		<button type="submit" class="btn btn-primary btn-sm">Matricular</button>
