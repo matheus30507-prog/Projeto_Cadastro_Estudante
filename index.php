@@ -15,7 +15,7 @@
 	<div class="alinhamento">
 		<button type="button" class="btn btn-success" onclick="window.location.href='cadastro_estudante/estudante.php'">Cadastrar Estudante</button>
 		<button type="button" class="btn btn-primary" onclick="window.location.href='cadastro_curso/curso.php'">Cadastrar Curso</button>
-		<button type="button" class="btn btn-warning">Matricular Estudante</button>
+		<button type="button" class="btn btn-warning" onclick="window.location.href='matricula/matricula.php'">Matricular Estudante</button>
 	</div>
 </body>
 </html>
