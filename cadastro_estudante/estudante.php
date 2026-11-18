@@ -8,23 +8,42 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+	<nav class="navbar navbar-dark bg-dark">
+  		<span class="navbar-brand mb-0 h1">Cadastro de Estudantes:</span>
+	</nav>
+
 		<form class="alinhamento">
-			<h2>Dados</h2>
+			<h2>Dados do Estudante:</h2>
 			<div class="form-group">
     			<label>Nome:</label>
-    			<input type="text" class="form-control" name="nome_estudante" placeholder="Nome">
+    			<input type="text" class="form-control" name="nome_estudante" placeholder="Nome" required>
   			</div>
 
   			<div class="form-group">
-    			<label>Idade:</label>
-    			<input type="number" class="form-control" name="idade" placeholder="Idade">
+    			<label>Data de Nascimento:</label>
+    			<input type="date" class="form-control" name="data_nascimento" required>
   			</div>
 
   			<div class="form-group">
     			<label>Sexo:</label>
-    			<input type="" class="form-control" name="idade" placeholder="Idade">
+    			<select name="sexo" class="form-control" required>
+    				<option value="">Selecione o sexo</option>
+    				<option value="masculino">Masculino</option>
+    				<option value="feminino">Feminino</option>
+    				<option value="nao_informar">Não Informar</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+    			<label>Telefone:</label>
+    			<input type="tel" class="form-control" name="telefone" placeholder="(xx) xxxxxxxxx" required>
   			</div>
 
+  			<div class="form-group">
+    			<label>Email:</label>
+    			<input type="email" class="form-control" name="email" placeholder="Email" required>
+  			</div>
+  			
 		</form>
 </body>
 </html>
