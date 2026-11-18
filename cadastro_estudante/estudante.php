@@ -52,6 +52,33 @@
   			<hr>
   			<p style="font-weight: bold;">Cadastrar Endereço:</p>
 
+  			<div class="form-group">
+    			<label>Cidade:</label>
+    			<input type="text" class="form-control" name="endereco[cidade]" placeholder="Cidade" required>
+  			</div>
+
+  			<div class="form-group">
+    			<label>Rua:</label>
+    			<input type="text" class="form-control" name="endereco[rua]" placeholder="Rua" required>
+  			</div>
+
+  			 <div class="form-group">
+    			<label>Estado:</label>
+    			<input type="text" class="form-control" name="endereco[estado]" placeholder="Estado" required>
+  			</div>
+
+  			<div class="form-group">
+    			<label>Número da casa:</label>
+    			<input type="text" class="form-control" name="endereco[numero_casa]" placeholder="Numero" required>
+  			</div>
+
+  			<div class="form-group">
+    			<label>CEP:</label>
+    			<input type="text" class="form-control" name="endereco[cidade]" placeholder="CEP XXXXX-XXX" required>
+  			</div>
+
+  			<button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+
 		</form>
 </body>
 </html>
