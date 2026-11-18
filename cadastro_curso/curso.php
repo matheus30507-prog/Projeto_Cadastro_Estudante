@@ -16,7 +16,7 @@
       		</li>
       	</ul>
 	</nav>
-		<form class="alinhamento" method="POST" action="salvar_estudante.php">
+		<form class="alinhamento" method="POST" action="salvar_curso.php">
 			<h2>Dados do Curso:</h2>
 			<div class="form-group">
     			<label>Nome do Curso:</label>
