@@ -16,6 +16,13 @@
       		</li>
       	</ul>
 	</nav>
+
+	<?php if (isset($_GET['sucesso'])): ?>
+    	<div class="alert alert-success text-center mt-3 mx-auto" style="max-width: 900px;">
+        	Curso cadastrado!
+    	</div>
+	<?php endif; ?>
+
 		<form class="alinhamento" method="POST" action="salvar_curso.php">
 			<h2>Dados do Curso:</h2>
 			<div class="form-group">
@@ -57,7 +64,7 @@
 			<div class="form-group">
     			<label>Nivel de Ensino:</label>
     			<select name="nivel_ensino" class="form-control" required>
-    				<option value="">Selecione a Duração</option>
+    				<option value="">Selecione o Nível de Ensino</option>
     				<option value="Graduação">Graduação</option>
     				<option value="Pós-Graduação">Pós-Graduação</option>
     				<option value="Tecnico">Tecnico</option>
