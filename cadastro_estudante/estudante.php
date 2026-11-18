@@ -10,9 +10,14 @@
 <body>
 	<nav class="navbar navbar-dark bg-dark">
   		<span class="navbar-brand mb-0 h1">Cadastro de Estudantes:</span>
+  		<ul class="navbar-nav mr-auto">
+      		<li class="nav-item active">
+        		<a class="nav-link" href="../index.php">Voltar</a>
+      		</li>
+      	</ul>
 	</nav>
 
-		<form class="alinhamento">
+		<form class="alinhamento" method="POST" action="salvar_estudante.php">
 			<h2>Dados do Estudante:</h2>
 			<div class="form-group">
     			<label>Nome:</label>
@@ -43,7 +48,10 @@
     			<label>Email:</label>
     			<input type="email" class="form-control" name="email" placeholder="Email" required>
   			</div>
-  			
+
+  			<hr>
+  			<p style="font-weight: bold;">Cadastrar Endereço:</p>
+
 		</form>
 </body>
 </html>
