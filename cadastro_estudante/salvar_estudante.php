@@ -7,6 +7,16 @@ $data_nascimento = $_POST['data_nascimento']
 $sexo = $_POST['sexo'];
 $telefone = $_POST['telefone'];
 $email = $_POST['email'];
+$e = $_POST['endereco'];
+
+$endereco_completo = implode(', ', [
+    $e['rua'],
+    $e['numero_casa'],
+    $e['cidade'],
+    $e['estado'],
+    $e['cep']
+]);
+
 
 
 
