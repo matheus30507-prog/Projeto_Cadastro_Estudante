@@ -1,4 +1,6 @@
 <?php 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 require_once "../conexao.php";
 
@@ -30,3 +32,6 @@ $colecao->insertOne([
     'email'           => $email,
     'endereco'        => $endereco_completo
 ]);
+
+header("Location: estudante.php?sucesso=1");
+exit;

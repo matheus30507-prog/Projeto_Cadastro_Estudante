@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
+
 use MongoDB\Driver\ServerApi;
 
 $uri = 'mongodb+srv://matheus30507_db_user:MM123456@estudantedb.blzhkwp.mongodb.net/';
