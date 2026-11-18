@@ -22,14 +22,48 @@
     			<label>Nome do Curso:</label>
     			<input type="text" class="form-control" name="nome_curso" placeholder="Nome Curso" required>
   			</div>
+
   			<div class="form-group">
     			<label>Período:</label>
-    			<select name="sexo" class="form-control" required>
+    			<select name="periodo" class="form-control" required>
     				<option value="">Selecione o período</option>
     				<option value="Noturno">Noturno</option>
     				<option value="Manhã">Manhã</option>
 				</select>
 			</div>
+
+			<div class="form-group">
+    			<label>Modalidade de Ensino:</label>
+    			<select name="modalidade_ensino" class="form-control" required>
+    				<option value="">Selecione a modalidade</option>
+    				<option value="Presencial">Presencial</option>
+    				<option value="EAD">EAD</option>
+    				<option value="Semi-Presencial">Semi-Presencial</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+    			<label>Duração:</label>
+    			<select name="duracao" class="form-control" required>
+    				<option value="">Selecione a Duração</option>
+    				<option value="1 Ano">1 Ano</option>
+    				<option value="2 Anos">2 Anos</option>
+    				<option value="3 Anos">3 Anos</option>
+    				<option value="4 Anos">4 Anos</option>
+    				<option value="5 Anos">5 Anos</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+    			<label>Nivel de Ensino:</label>
+    			<select name="nivel_ensino" class="form-control" required>
+    				<option value="">Selecione a Duração</option>
+    				<option value="Graduação">Graduação</option>
+    				<option value="Pós-Graduação">Pós-Graduação</option>
+    				<option value="Tecnico">Tecnico</option>
+				</select>
+			</div>
+
 
 
   			<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
