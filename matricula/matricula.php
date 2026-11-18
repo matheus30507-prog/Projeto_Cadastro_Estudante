@@ -8,6 +8,11 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+	<?php require_once __DIR__ . '/../conexao.php'; 
+	$banco = $conexao->selectDatabase("EstudanteDB");
+	$colecaoEstudantes = $banco->selectCollection('estudantes');
+	$colecaoCursos = $banco->selectCollection('cursos');
+	?>
 	<nav class="navbar navbar-dark bg-dark">
   		<span class="navbar-brand mb-0 h1">Cadastro de Cursos:</span>
   		<ul class="navbar-nav mr-auto">
@@ -19,6 +24,7 @@
 
 	<form class="alinhamento" method="POST" action="salvar_curso.php">
 		<h2>Matrícula:</h2>
+
 
 
   		<button type="submit" class="btn btn-primary btn-sm">Matricular</button>
