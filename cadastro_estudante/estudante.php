@@ -74,7 +74,7 @@
 
   			<div class="form-group">
     			<label>CEP:</label>
-    			<input type="text" class="form-control" name="endereco[cidade]" placeholder="CEP XXXXX-XXX" required>
+    			<input type="text" class="form-control" name="endereco[CEP]" placeholder="CEP XXXXX-XXX" required>
   			</div>
 
   			<button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
