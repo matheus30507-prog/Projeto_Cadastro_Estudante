@@ -18,7 +18,18 @@
 	</nav>
 		<form class="alinhamento" method="POST" action="salvar_estudante.php">
 			<h2>Dados do Curso:</h2>
-		
+			<div class="form-group">
+    			<label>Nome do Curso:</label>
+    			<input type="text" class="form-control" name="nome_curso" placeholder="Nome Curso" required>
+  			</div>
+  			<div class="form-group">
+    			<label>Período:</label>
+    			<select name="sexo" class="form-control" required>
+    				<option value="">Selecione o período</option>
+    				<option value="Noturno">Noturno</option>
+    				<option value="Manhã">Manhã</option>
+				</select>
+			</div>
 
 
   			<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
