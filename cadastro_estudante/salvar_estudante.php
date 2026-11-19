@@ -30,7 +30,13 @@ $colecao->insertOne([
     'sexo'            => $sexo,
     'RA'        => $RA,
     'email'           => $email,
-    'endereco'        => $endereco_completo
+    'endereco' => [
+    'rua' => $e['rua'],
+    'numero_casa' => $e['numero_casa'],
+    'cidade' => $e['cidade'],
+    'estado' => $e['estado'],
+    'cep' => $e['cep']
+    ]
 ]);
 
 header("Location: estudante.php?sucesso=1");

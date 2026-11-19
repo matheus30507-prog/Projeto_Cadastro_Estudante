@@ -13,6 +13,7 @@
   		<span class="navbar-brand mb-0 h1">Cadastro Universitário:</span>
 	</nav>
 	<div class="alinhamento">
+		<h2>Selecione a Opção Desejada:</h2>
 		<button type="button" class="btn btn-success" onclick="window.location.href='cadastro_estudante/estudante.php'">Cadastrar Estudante</button>
 		<button type="button" class="btn btn-primary" onclick="window.location.href='cadastro_curso/curso.php'">Cadastrar Curso</button>
 		<button type="button" class="btn btn-warning" onclick="window.location.href='matricula/matricula.php'">Matricular Estudante</button>

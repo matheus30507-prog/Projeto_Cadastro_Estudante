@@ -65,7 +65,7 @@
 
   			<div class="form-group">
     			<label>Rua:</label>
-    			<input type="text" class="form-control" name="endereco[rua]" placeholder="Rua" required>
+    			<input type="text" class="form-control" name="endereco[rua]" placeholder="Ex. Rua das Cachoeiras" required>
   			</div>
 
   			 <div class="form-group">
@@ -107,19 +107,25 @@
 			</thead>
 			<tbody>
 				<?php foreach ($listaEstudantes as $e): ?>
-					<tr>
-						<td><?= htmlspecialchars($e['nome_estudante'] ?? '') ?></td>
-						<td><?= htmlspecialchars($e['data_nascimento'] ?? '') ?></td>
-						<td><?= htmlspecialchars($e['sexo'] ?? '') ?></td>
-						<td><?= htmlspecialchars($e['RA'] ?? '') ?></td>
-						<td><?= htmlspecialchars($e['email'] ?? '') ?></td>
-						<td><?= htmlspecialchars($e['endereco'] ?? '') ?></td>
-					</tr>
+    				<tr>
+        				<td><?= htmlspecialchars($e['nome_estudante'] ?? '') ?></td>
+        				<td><?= htmlspecialchars($e['data_nascimento'] ?? '') ?></td>
+       					<td><?= htmlspecialchars($e['sexo'] ?? '') ?></td>
+        				<td><?= htmlspecialchars($e['RA'] ?? '') ?></td>
+        				<td><?= htmlspecialchars($e['email'] ?? '') ?></td>
+        				<td>
+            				<?= htmlspecialchars(
+                				($e['endereco']['rua'] ?? '') . ', ' .
+                				($e['endereco']['numero_casa'] ?? '') . ', ' .
+                				($e['endereco']['cidade'] ?? '') . ', ' .
+                				($e['endereco']['estado'] ?? '') . ', ' .
+                				($e['endereco']['cep'] ?? '')
+            				) ?>
+        				</td>
+    				</tr>
 				<?php endforeach; ?>
 			</tbody>
 		</table>
 	</div>
-</body>
-</html>
 </body>
 </html>
