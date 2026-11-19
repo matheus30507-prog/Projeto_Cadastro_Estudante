@@ -96,7 +96,23 @@
 			}
 		}
 		?>
-		
+		<h3>Alunos e cursos matriculados:</h3>
+		<table class="table table-striped table-bordered">
+			<thead class="table-dark">
+				<tr>
+					<th>Aluno</th>
+					<th>Cursos matriculados</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($listaAlunos as $a): ?>
+					<tr>
+						<td><?= htmlspecialchars($a['nome_estudante']) ?></td>
+						<td><?= htmlspecialchars(implode(', ', $cursosPorAluno[(string) $a['_id']] ?? [])) ?></td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
 	</div>
 
 </body>
