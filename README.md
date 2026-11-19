@@ -15,6 +15,6 @@ O projeto consiste no cadastro de alunos e cursos, inserindo informações neces
 
 * Tela de Cadastro de Estudante
 
-  <img width="1901" height="707" alt="Captura de tela 2026-11-19 192803" src="https://github.com/user-attachments/assets/b88feffa-b778-4a4f-a5ca-cdf7b70952de" />
   <img width="1900" height="901" alt="Captura de tela 2026-11-19 192753" src="https://github.com/user-attachments/assets/c05b3d38-9720-4525-a6ab-be5bd19b6b82" />
+  <img width="1901" height="707" alt="Captura de tela 2026-11-19 192803" src="https://github.com/user-attachments/assets/b88feffa-b778-4a4f-a5ca-cdf7b70952de" />
 
