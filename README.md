@@ -28,5 +28,13 @@ O projeto consiste no cadastro de alunos e cursos, inserindo informações neces
   Nesta tela o usuário tem que inserir os dados do curso que ele vai cadastrar como o seu Nome, Período e o Nível de Ensino que ele vai possuir.
   Assim que o cadastro é realizado o curso vai para tabela da parte de baixo com a mesma estrutura da tabela de estudantes, só que mostrando todos os cursos que estão cadastrados.
 
+* Tela de Matricular Estudantes
+
+<img width="1919" height="721" alt="Captura de tela 2026-11-19 194416" src="https://github.com/user-attachments/assets/38a0f473-5e74-4dc2-819d-fc38223d1c76" />
+
+  Nesta tela o usuário tem a possibilidade de matricular um estudante em qualquer curso. Na tela ele simplesmente vai selecionar o estudante desejado e qual curso ele deseja matricular o mesmo. O estudante pode se matricular em quantos cursos quiser, não tendo um limite definido.
+
+
+
   
 
