@@ -86,5 +86,40 @@
   			<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
 
 		</form>
+
+		<div style="width:100%; max-width:1100px; margin:30px auto; padding:0 15px; overflow-x:auto;">
+		<?php
+		require_once __DIR__ . '/../conexao.php';
+		$bancoTabela = $conexao->selectDatabase("EstudanteDB");
+		$listaEstudantes = $bancoTabela->selectCollection('estudantes')->find();
+		?>
+		<h3>Estudantes cadastrados:</h3>
+		<table class="table table-striped table-bordered">
+			<thead class="table-dark">
+				<tr>
+					<th>Nome</th>
+					<th>Data de Nascimento</th>
+					<th>Sexo</th>
+					<th>R.A</th>
+					<th>Email</th>
+					<th>Endereço</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($listaEstudantes as $e): ?>
+					<tr>
+						<td><?= htmlspecialchars($e['nome_estudante'] ?? '') ?></td>
+						<td><?= htmlspecialchars($e['data_nascimento'] ?? '') ?></td>
+						<td><?= htmlspecialchars($e['sexo'] ?? '') ?></td>
+						<td><?= htmlspecialchars($e['RA'] ?? '') ?></td>
+						<td><?= htmlspecialchars($e['email'] ?? '') ?></td>
+						<td><?= htmlspecialchars($e['endereco'] ?? '') ?></td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
 </body>
 </html>
