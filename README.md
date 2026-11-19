@@ -34,7 +34,15 @@ O projeto consiste no cadastro de alunos e cursos, inserindo informações neces
 
   Nesta tela o usuário tem a possibilidade de matricular um estudante em qualquer curso. Na tela ele simplesmente vai selecionar o estudante desejado e qual curso ele deseja matricular o mesmo. O estudante pode se matricular em quantos cursos quiser, não tendo um limite definido.
 
+# Tecnologias Utilizadas:
+- MongoDB/Atlas
+- PHP
+- CSS
+- HTML
+- JavaScript (Para o Bootstrap)
 
+Aluno do curso de Sistemas de Informação
+Matheus Freitas dos Santos R.A: 60005346
 
   
 
