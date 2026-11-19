@@ -33,7 +33,13 @@
       	</ul>
 	</nav>
 
-	<form class="alinhamento" method="POST" action="salvar_curso.php">
+	<?php if (isset($_GET['sucesso'])): ?>
+    	<div class="alert alert-success text-center mt-3 mx-auto" style="max-width: 900px;">
+        	Matricula Realizada!
+    	</div>
+	<?php endif; ?>
+
+	<form class="alinhamento" method="POST" action="salvar_matricula.php">
 		<h2>Matrícula:</h2>
 
 		<label>Selecione o aluno:</label>
@@ -69,6 +75,29 @@
   		<button type="submit" class="btn btn-primary btn-sm">Matricular</button>
 
 	</form>
+
+	<div style="width:100%; max-width:1100px; margin:30px auto; padding:0 15px; overflow-x:auto;">
+		<?php
+		$bancoTabela = $conexao->selectDatabase("EstudanteDB");
+		$listaAlunos = $bancoTabela->selectCollection('estudantes')->find();
+		$listaCursos = $bancoTabela->selectCollection('cursos')->find();
+		$listaMatriculas = $bancoTabela->selectCollection('matriculas')->find();
+
+		$nomesCursos = [];
+		foreach ($listaCursos as $c) {
+			$nomesCursos[(string) $c['_id']] = $c['nome_curso'];
+		}
+
+		$cursosPorAluno = [];
+		foreach ($listaMatriculas as $m) {
+			$idCurso = (string) $m['curso'];
+			if (isset($nomesCursos[$idCurso])) {
+				$cursosPorAluno[(string) $m['aluno']][] = $nomesCursos[$idCurso];
+			}
+		}
+		?>
+		
+	</div>
 
 </body>
 </html>

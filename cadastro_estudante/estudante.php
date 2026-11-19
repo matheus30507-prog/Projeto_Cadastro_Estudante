@@ -70,7 +70,7 @@
 
   			 <div class="form-group">
     			<label>Estado:</label>
-    			<input type="text" class="form-control" name="endereco[estado]" placeholder="Estado" required>
+    			<input type="text" class="form-control" name="endereco[estado]" placeholder="Estado Ex.(SP)" required>
   			</div>
 
   			<div class="form-group">
