@@ -76,5 +76,38 @@
   			<button type="submit" class="btn btn-primary btn-sm">Cadastrar</button>
 
 		</form>
+
+		<div style="width:100%; max-width:1100px; margin:30px auto; padding:0 15px; overflow-x:auto;">
+		<?php
+		require_once __DIR__ . '/../conexao.php';
+		$bancoTabela = $conexao->selectDatabase("EstudanteDB");
+		$listaCursos = $bancoTabela->selectCollection('cursos')->find();
+		?>
+		<h3>Cursos cadastrados:</h3>
+		<table class="table table-striped table-bordered">
+			<thead class="table-dark">
+				<tr>
+					<th>Nome do Curso</th>
+					<th>Período</th>
+					<th>Modalidade</th>
+					<th>Duração</th>
+					<th>Nível de Ensino</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($listaCursos as $c): ?>
+					<tr>
+						<td><?= htmlspecialchars($c['nome_curso'] ?? '') ?></td>
+						<td><?= htmlspecialchars($c['periodo'] ?? '') ?></td>
+						<td><?= htmlspecialchars($c['modalidade_ensino'] ?? '') ?></td>
+						<td><?= htmlspecialchars($c['duracao'] ?? '') ?></td>
+						<td><?= htmlspecialchars($c['nivel_ensino'] ?? '') ?></td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
 </body>
 </html>
