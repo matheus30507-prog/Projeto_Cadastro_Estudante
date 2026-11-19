@@ -34,6 +34,12 @@ O projeto consiste no cadastro de alunos e cursos, inserindo informações neces
 
   Nesta tela o usuário tem a possibilidade de matricular um estudante em qualquer curso. Na tela ele simplesmente vai selecionar o estudante desejado e qual curso ele deseja matricular o mesmo. O estudante pode se matricular em quantos cursos quiser, não tendo um limite definido.
 
+
+* MongoDB/Atlas
+<img width="1919" height="579" alt="Captura de tela 2026-11-19 195714" src="https://github.com/user-attachments/assets/a98242ed-585d-4c48-83eb-b47cc9be9156" />
+
+  Para o banco de dados utilizei do MongoDB/Atlas hospedado via Nuvem sendo um banco de dados Não relacional.
+
 # Tecnologias Utilizadas:
 - MongoDB/Atlas
 - PHP
