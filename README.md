@@ -22,8 +22,8 @@ O projeto consiste no cadastro de alunos e cursos, inserindo informações neces
   Logo abaixo existe uma tabela mostrando todos os estudantes matriculados juntamente de suas informações.
 
 * Tela de Cadastro de Curso
-  
-  <img width="1901" height="707" alt="Captura de tela 2026-11-19 192803" src="https://github.com/user-attachments/assets/e40396ee-48ab-4e98-96b1-3d207be704e1" />
+
+<img width="1868" height="849" alt="Captura de tela 2026-11-19 193713" src="https://github.com/user-attachments/assets/824b3593-9e94-492c-8f93-88c05b0b30e0" />
 
   Nesta tela o usuário tem que inserir os dados do curso que ele vai cadastrar como o seu Nome, Período e o Nível de Ensino que ele vai possuir.
   Assim que o cadastro é realizado o curso vai para tabela da parte de baixo com a mesma estrutura da tabela de estudantes, só que mostrando todos os cursos que estão cadastrados.
