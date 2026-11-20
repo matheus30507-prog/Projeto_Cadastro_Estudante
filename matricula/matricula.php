@@ -33,6 +33,12 @@
       	</ul>
 	</nav>
 
+	<?php
+		if (isset($_GET['erro']) && $_GET['erro'] == 'duplicado') {
+    		echo "<p style='color: red;'>Este aluno já está matriculado neste curso!</p>";
+		}
+	?>
+
 	<?php if (isset($_GET['sucesso'])): ?>
     	<div class="alert alert-success text-center mt-3 mx-auto" style="max-width: 900px;">
         	Matricula Realizada!

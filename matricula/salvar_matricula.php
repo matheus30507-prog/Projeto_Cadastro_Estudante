@@ -11,6 +11,18 @@ $banco = $conexao->selectDatabase("EstudanteDB");
 
 $colecao = $banco->selectCollection("matriculas");
 
+$filtro = [
+    'aluno' => $aluno,
+    'curso' => $curso
+];
+
+$matriculaExistente = $colecao->findOne($filtro);
+
+if ($matriculaExistente) {
+    header("Location: matricula.php?erro=duplicado");
+    exit;
+}
+
 $colecao->insertOne([
     'aluno'  => $aluno,
     'curso' => $curso,
